@@ -27,7 +27,8 @@ const ENDPOINT = 'https://formsubmit.co/ajax/iadesanya539@gmail.com';
       });
       const out = await res.json().catch(() => ({}));
       if (!res.ok || out.success === 'false') throw new Error(out.message || 'Could not save your spot. Check your connection and try again.');
-      window.location.href = 'thanks.html';
+      document.getElementById('formWrap').hidden = true;
+      document.getElementById('done').hidden = false;
       return;
     } catch (err) {
       fail(err.message || 'Could not save your spot. Check your connection and try again.');

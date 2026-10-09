@@ -51,23 +51,24 @@
             </div>
 
             <div class="card" id="join">
-                <form id="formWrap">
+                <div id="formWrap">
                     <h2>Get early access</h2>
                     <p class="sub">Tell us who you are. We'll email you when AMIFY opens.</p>
         
                     <form id="form" novalidate>
                         <div class="roles" role="radiogroup" aria-label="I am a">
-                        <label><input type="radio" name="role" value="Farmer" checked><span>I'm a farmer</span></label>
-                        <label><input type="radio" name="role" value="Buyer"><span>I'm a buyer</span></label>
-                   </div>
+                            <label><input type="radio" name="role" value="Farmer" checked><span>I'm a farmer</span></label>
+                            <label><input type="radio" name="role" value="Buyer"><span>I'm a buyer</span></label>
+                       </div>
                 
-                   <input class="field" type="text" name="name" placeholder="Your name" autocomplete="name" required>
-                   <input class="field" type="email" name="email" placeholder="Email address" autocomplete="email" required>
-                   <input class="field" type="text" name="state" placeholder="State (e.g. Lagos, Kano)" autocomplete="off">
-                   <input class="hp" type="text" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true">
-                   <button class="btn" type="submit" id="submitBtn">Join the waitlist</button>
-                   <p class="msg" id="msg" role="status" aria-live="polite"></p>
-                </form>
+                       <input class="field" type="text" name="name" placeholder="Your name" autocomplete="name" required>
+                       <input class="field" type="email" name="email" placeholder="Email address" autocomplete="email" required>
+                       <input class="field" type="text" name="state" placeholder="State (e.g. Lagos, Kano)" autocomplete="off">
+                       <input class="hp" type="text" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true">
+                       <button class="btn" type="submit" id="submitBtn">Join the waitlist</button>
+                       <p class="msg" id="msg" role="status" aria-live="polite"></p>
+                    </form>
+                </div>
             </div>
 
             <div class="done" id="done" hidden>
